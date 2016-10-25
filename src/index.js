@@ -10,10 +10,16 @@ import './style.css';
  * State handling
  */
 
-const INITIAL_STATE = {};
+const INITIAL_STATE = {
+  clicks: 0
+};
 
 function reducer(state = INITIAL_STATE, action = {}) {
   switch(action.type) {
+    case 'CLICK':
+      return {
+        clicks: state.clicks + 1
+      };
     default:
       return state;
   }

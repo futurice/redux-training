@@ -11,15 +11,11 @@ import './style.css';
  */
 
 const INITIAL_STATE = {
-  clicks: 0
+  searchResults: []
 };
 
 function reducer(state = INITIAL_STATE, action = {}) {
   switch(action.type) {
-    case 'CLICK':
-      return {
-        clicks: state.clicks + 1
-      };
     default:
       return state;
   }

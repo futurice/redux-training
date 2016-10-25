@@ -23,11 +23,18 @@ const DATABASE = [
 
 
 export function searchWithTerm(term) {
-  if(term === '') {
-    return [];
-  }
+  return new Promise(function(resolve, reject) {
+    if(term === '') {
+      resolve([]);
+      return
+    }
 
-  return DATABASE.filter((name) =>
-    name.toLowerCase().startsWith(term.toLowerCase())
-  );
+    const results = DATABASE.filter((name) =>
+      name.toLowerCase().startsWith(term.toLowerCase())
+    );
+
+    setTimeout(function() {
+      resolve(results);
+    }, 1000);
+  });
 }

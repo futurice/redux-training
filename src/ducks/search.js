@@ -7,10 +7,14 @@ const INITIAL_STATE = {
 const SEARCH_COMPLETED = 'SEARCH_COMPLETED';
 
 export function search(searchTerm) {
-  return {
-    type: SEARCH_COMPLETED,
-    payload: searchWithTerm(searchTerm)
-  };
+  return function(dispatch) {
+    searchWithTerm(searchTerm).then((results) => {
+      dispatch({
+        type: SEARCH_COMPLETED,
+        payload: results
+      });
+    })
+  }
 }
 
 export default function reducer(state = INITIAL_STATE, action = {}) {

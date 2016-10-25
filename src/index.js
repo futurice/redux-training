@@ -6,28 +6,17 @@ import { createStore } from 'redux';
 import App from './App';
 import './style.css';
 
+import reducer from './ducks/search';
+
 /*
  * State handling
  */
 
-const INITIAL_STATE = {
-  searchResults: []
-};
-
-function reducer(state = INITIAL_STATE, action = {}) {
-  switch(action.type) {
-    default:
-      return state;
-  }
-};
-
 const store = createStore(reducer);
-
 
 /*
  * Initialize app
  */
-
 ReactDOM.render(
   <Provider store={store}>
     <App />

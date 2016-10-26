@@ -108,7 +108,7 @@ getUser('rikurouvila').then(function(user) {
 
 
 ## 2. React komponentin oma tila
-<img style="float: right; margin: 20px" src="https://www.dropbox.com/pri/get/clickcount.gif?raw=1&_subject_uid=27390745&w=AABTDFGxLwihTp4FMMmJJw8UyrX2DIMdlqMrws8boLzs5w&size=2048x1536&size_mode=3">
+<img style="float: right; margin: 20px" src="https://www.dropbox.com/s/xx4r2ufcpz3d37r/clickcount.gif?raw=1">
 ```javascript
 const App = React.createClass({
   getInitialState() {
@@ -146,7 +146,7 @@ const App = React.createClass({
   * Käyttäjäprofiilin tiedot
   * Yleisesti ottaen sellainen tieto, jota hyödynnetään ympäri sovellusta
 
-  * ![](https://photos-6.dropbox.com/t/2/AACMCsLwX-8DR6SHuy-lSmWQLldBXTEo2cRUr2Xu6a9AWA/12/27390745/png/32x32/3/1477483200/0/2/Screenshot%202016-10-26%2010.57.43.png/EMLDzxQYpWkgBygH/hMywg_2hs_NELpuoFIKvf4y9FaPOo__iDBP1zcA7Z10?size_mode=5&dl=0&size=32x32)
+  * ![](https://www.dropbox.com/s/da2bn57z8cuzh92/Screenshot%202016-10-26%2010.57.43.png?raw=1)
 
 **Valmis Click counter komponentti:**
 `git checkout tags/2`
@@ -155,7 +155,7 @@ const App = React.createClass({
 ## 3. Sovelluksen tilan toteutus Reduxilla
 
 
-![](https://photos-2.dropbox.com/t/2/AABLo_XhflGzfovpLECif0mxwUs14-Svsp_spsT8K4IJGQ/12/27390745/png/32x32/1/_/1/2/Screenshot%202016-10-26%2011.35.17.png/EMLDzxQYpmkgBygH/DTXv0UhYni64P-FFLZPwY4C5wJwdCAOFA7EpAdwRjuI?size=2048x1536&size_mode=3)
+![](https://www.dropbox.com/s/pp6u3a73jqq3wgn/Screenshot%202016-10-26%2011.35.17.png?raw=1)
 
 **Valmis Click counter komponentti, jonka tila tallennetaan sovelluksen (reduxin) tilaan:**
 
@@ -166,7 +166,7 @@ const App = React.createClass({
 
 **Pohja:** `git checkout tags/4`
 
-![](https://www.dropbox.com/pri/get/search.gif?raw=1&_subject_uid=27390745&w=AACh834fJeFDSxDYigbp2GkdeifdrIqqBFJRIxwiImSnKA&size=2048x1536&size_mode=3)
+![](https://www.dropbox.com/s/pk620qvnlmglmrc/search.gif?raw=1)
 
 
 #### Sovelluslogiikan paloittelu

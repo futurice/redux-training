@@ -22,6 +22,7 @@ Kaikki sovelluksen sisällä oleva tieto. Määrittää esimerkiksi sen, mitä k
 Esimerkiksi valokatkaisijan tila voi olla joko päällä tai pois päältä.
 
 **Pelin tila:**
+
 ```js
 {
   gameRunning: true,
@@ -37,6 +38,7 @@ Esimerkiksi valokatkaisijan tila voi olla joko päällä tai pois päältä.
 ```
 
 **Websovelluksen tila:**
+
 ```js
 {
   loggedIn: true,
@@ -85,6 +87,7 @@ function myReducer(previousState, action) {
 #### Synkronisuus / Asynkronisuus
 
 Esimerkiksi synkroninen funktio palauttaa tuloksen heti sen jälkeen kun sitä kutsutaan
+
 ```js
 const sum = sumNumbers(1,2); // 3
 ```
@@ -109,6 +112,7 @@ getUser('rikurouvila').then(function(user) {
 
 ## 2. React komponentin oma tila
 <img style="float: right; margin: 20px" src="https://www.dropbox.com/s/xx4r2ufcpz3d37r/clickcount.gif?raw=1">
+
 ```javascript
 const App = React.createClass({
   getInitialState() {
